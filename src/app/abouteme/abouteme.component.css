@@ -1,0 +1,98 @@
+.home{
+    overflow: auto;
+}
+.home:before {
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    overflow: auto;
+    background-color: #1d1c1c;
+}
+h2 {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    line-height: 1em;
+    text-transform: capitalize;
+    color: #ffffff;
+    position: relative;
+    display: inline-block;
+    color: #00A3E1;
+    margin: 0;
+}
+p{
+    line-height: 1.65;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #E1E1E1;
+}
+
+ul{
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+li{
+    line-height: 1em;
+    margin-bottom: 15px;
+    padding: 0;
+    border-bottom:transparent ;
+}
+.title{
+    border-bottom: 2px solid #00A3E1;
+    position: relative;
+    display: inline-block;
+    margin-right: 15px;
+    padding-bottom: 1px;
+    color: #ffffff;
+}
+.title::after{
+    content: ':';
+    position: absolute;
+    right: -10px;
+}
+.value{
+    color: #e1e1e1;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    flex: 0 0 auto;
+    width: 50%;
+}
+.image img{
+    width: 100%;
+}
+h3{
+    border-color: #00A3E1 !important;
+}
+.boxe{
+    flex: 0 0 auto;
+    width: 32.333333%;
+    text-align: center;
+}
+.boxe img{
+    margin-bottom: 10px;
+}
+.boxe h4{
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+}
+.boxe p{
+    font-size: 14.5px;
+    line-height: 22px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+}
+@media (max-width: 760px) {
+    .image {
+        width: 70%;
+    }
+.boxe{
+    width: 100%;
+}
+}
+/* From Uiverse.io by adamgiebl */ 

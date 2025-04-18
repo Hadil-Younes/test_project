@@ -1,0 +1,52 @@
+<div class="navbar-active" style="background-color: black;">
+
+    <div class="hedernav2">
+        <div class="botttonmenu2">
+            <button (click)="toggleSidebar()">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+        <h2>Kanzari Houssem</h2>
+    </div>
+</div>
+
+<div class="dropdown-menu" *ngIf="showDropdown ">
+</div>
+<div class="sidebar2" [ngClass]="{'open': isSidebarOpen}">
+    <div class="scroll-container">
+        <div class="userpanel" style="height: 203px;">
+            <div class="image" style="height: 203px;">
+                <img src="../../assets/image/kkjhu.JPG" alt="">
+
+                <div class="name">
+                    <h2>Kanzari Houssem</h2>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar-menu">
+            <ul class="list">
+                <li>
+                    <a [routerLink]="['/home']" routerLinkActive="active"
+                        [routerLinkActiveOptions]="{ exact: true }"><i class='bx bx-home'></i>Home</a>
+                </li>
+                <li>
+                    <a [routerLink]="['/abouteme']" routerLinkActive="active"
+                        [routerLinkActiveOptions]="{ exact: true }"><i class='bx bx-user'></i>Aboute me</a> 
+                </li>    
+                <li>
+                    <a [routerLink]="['/resum']" routerLinkActive="active"
+                        [routerLinkActiveOptions]="{ exact: true }">  <i class='bx bx-id-card'></i>resum</a> 
+                </li>  
+                <li>
+                    <a [routerLink]="['/contact']" routerLinkActive="active"
+                        [routerLinkActiveOptions]="{ exact: true }">    <i class='bx bx-envelope'></i>contact me</a> 
+                </li>        
+            </ul>
+        </div>
+    </div>
+</div>
+<app-sidbare></app-sidbare>
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />

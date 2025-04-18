@@ -1,0 +1,45 @@
+.a2 {
+    position: fixed;
+    width: 199px;
+    background-color: #17181B;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+
+
+.content {
+    height: 400px;
+    width: auto;
+
+}
+
+
+.menu-toggle {
+    display: none;
+}
+
+
+
+
+.image p {
+    font-size: 11px;
+    color: #000;
+}
+
+@media (max-width: 600px) {
+    .a2 {
+        display: none;
+    }
+}
+
+@media (min-width: 599px) and (max-width: 760px) {
+    .a2 {
+        display: none;
+    }
+}
+ ul li a.active ,  ul li a.active i {
+    color: #fff;
+   
+}
